@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Ti 💖</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #f78dee, #ac2d42);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1 {
+            color: #7e1adb;
+            font-size: 3em;
+            position: relative;
+            z-index: 2;
+        }
+
+        p, h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .heart {
+            font-size: 5em;
+            animation: beat 1s infinite;
+            color: #ff0033;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        .bg-text {
+            position: absolute;
+            color: rgba(126, 26, 219, 0.25);
+            pointer-events: none;
+            user-select: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💖 Para la Mujer Mas Hermosa Del universo 💖</h1>
+
+<p>Quería recordarte lo especial que eres para mí </p>
+<p>que aunque aveces no te lo digo tanto como me gustaria </p>
+<p>quiero que sepas que te amo y te amare por siempre, </p>
+<p>me gustaria poder apoyarte mas y hacer que te sientas mejor</p>
+<p>pero no se como reaccionar a momentos asi aunque </p>
+<p>lo intento pero me es dificil cambiar algo asi</p>
+<p>pero por ti soy capaz de lo que sea</p>
+<p>pero dame tiempo para hacerlo no sera de la noche</p>
+<p>a la mañana pero asi sera amor.</p>
+
+<div class="heart">❤️</div>
+
+<p>Cada segundo que pasa me enamoro mas de ti </p>
+<p>eres tan increible que no se como te fijaste en mi </p>
+<p>pero le doy gracias a Dios que asi fue porque </p>
+<p>es lo mas bello que me a pasado en toda mi vida </p>
+<p>y espero que nunca te aburras de mi porque no quiero </p>
+<p>perderte jamas eres lo mas preciado que tengo </p>
+<p>y no lo digo como si te estuviera tratando </p>
+<p>como un objeto, me refiero a perder tu hermosa </p>
+<p>compañia que me encanta, si por mi fuera pasaria todo </p>
+<p>el tiempo contigo pero tengo que darle su tiempo </p>
+<p>porque si pasara mas tiempo contigo puede ser </p>
+<p>que te hartes de pasar tanto tiempo conmigo.</p>
+
+<div class="heart">❤️</div>
+
+<p>Bueno amor ya dejando todo lo demas de lado </p>
+<p>esto es para recordarte lo mucho que te amo mi amor </p>
+<p>y espero poder estar contigo para siempre y formar</p>
+<p>una hermosa familia con usted mi niña hermosa</p>
+
+<div class="heart">❤️</div>
+
+<h2>💖 TE AMO CON TODO MI SER IGNACIA 💖</h2>
+
+<script>
+window.onload = function() {
+
+    let altura = document.body.scrollHeight;
+    let ancho = window.innerWidth;
+
+    for(let i = 0; i < 200; i++){
+        let span = document.createElement("span");
+        span.className = "bg-text";
+        span.innerText = "IGNACIA";
+
+        span.style.top = Math.random() * altura + "px";
+        span.style.left = Math.random() * ancho + "px";
+        span.style.fontSize = (12 + Math.random() * 30) + "px";
+        span.style.transform = "rotate(" + (Math.random()*360) + "deg)";
+
+        document.body.appendChild(span);
+    }
+
+}
+</script>
+
+</body>
+</html>
